@@ -36,8 +36,8 @@ $windowWidth: 80em;
       aspect-ratio: 16 / 9;
 
       h3 {
-        font-size: 1rem;
         font-family: Arial, sans-serif;
+        font-size: 1rem;
         position: absolute;
         right: 1em;
         bottom: 1em;
@@ -62,19 +62,16 @@ $windowWidth: 80em;
         width: 100vw;
         transform: translate(-50%, -50%);
         opacity: 0;
-        background: rgba(255, 255, 255, 0.5);
 
         h4 {
           font-family: Arial, sans-serif;
           font-size: 6rem;
           margin: 0.3em 0;
-          color: white;
         }
 
         p {
           font-family: Arial, sans-serif;
           font-size: 2rem;
-          color: white;
           margin-bottom: 0.5em;
         }
 
@@ -82,7 +79,6 @@ $windowWidth: 80em;
           height: 1em;
           margin: 0;
           border: none;
-          background-color: white;
         }
       }
 

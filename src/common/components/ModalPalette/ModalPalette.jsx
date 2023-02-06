@@ -33,6 +33,8 @@ const ColorItem = ({name, color}) => {
   //Better to equal to animationStage2Time
   const animationStage3Time = 300;
 
+  const textColor = isColorLight(color) ? "#000" : "#fff";
+
   const handleClick = () => {
     if (isAnimation) {
       return;
@@ -68,13 +70,25 @@ const ColorItem = ({name, color}) => {
                           border-radius ${animationStage1Time}ms ease-in-out,
                           opacity ${animationStage2Time}ms ease-in-out`,
            }}></div>
-      <h3>{name}</h3>
-      <div className={styles.copyText} style={{transition: `opacity ${animationStage2Time}ms ease-in-out`}}>
-        <hr/>
-        <h4>Copied</h4>
-        <p>{color}</p>
-        <hr/>
+      <h3 style={{color: textColor}}>{name}</h3>
+      <div className={styles.copyText} style={{
+        transition: `opacity ${animationStage2Time}ms ease-in-out`,
+        backgroundColor: `rgba(${isColorLight ? "255, 255, 255, 0.2" : "0, 0, 0, 0.8"})`,
+      }}>
+        <hr style={{backgroundColor: textColor}}/>
+        <h4 style={{color: textColor}}>Copied</h4>
+        <p style={{color: textColor}}>{color}</p>
+        <hr style={{backgroundColor: textColor}}/>
       </div>
     </div>
   );
 };
+
+function isColorLight(hexColor) {
+  const hex = hexColor.replace("#", "");
+  const r = parseInt(hex.substring(0, 2), 16);
+  const g = parseInt(hex.substring(2, 4), 16);
+  const b = parseInt(hex.substring(4, 6), 16);
+  const brightness = ((r * 299) + (g * 587) + (b * 114)) / 1000;
+  return brightness > 100; //change this to configure
+}
