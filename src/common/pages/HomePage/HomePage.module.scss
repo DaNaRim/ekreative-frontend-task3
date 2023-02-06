@@ -1,0 +1,13 @@
+.home {
+  padding: 2em 6em;
+  text-align: center;
+  background: #3c40c6 url("../../../assets/svg/background-stars.svg");
+
+  .paletteList {
+    padding-top: 4em;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    justify-content: center;
+  }
+}

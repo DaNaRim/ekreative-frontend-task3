@@ -1,0 +1,25 @@
+$paletteWidth: 12.5em;
+
+.palette {
+  width: $paletteWidth;
+  padding: 0.5em;
+  background-color: white;
+  border-radius: 0.2em;
+
+  .colors {
+    display: flex;
+    flex-wrap: wrap;
+
+    .color {
+      width: calc($paletteWidth / 5);
+      height: 2em;
+    }
+  }
+
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1em;
+  }
+}
