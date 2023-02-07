@@ -6,6 +6,7 @@ const ModalPalette = ({paletteName, colors, closeModal}) => (
     <div className={styles.background} onClick={closeModal}></div>
     <div className={styles.window}>
       <h1>{paletteName}</h1>
+      <button className={styles.closeButton} onClick={closeModal}>X</button>
       <div className={styles.colors}>
         {colors.map((color) => (
           <ColorItem key={color.name} {...color}/>

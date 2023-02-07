@@ -20,6 +20,24 @@ $windowWidth: 80em;
   border-radius: 0.2em;
   background: white;
 
+  .closeButton {
+    font-family: Arial, sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    position: absolute;
+    top: 0.9em;
+    right: 0.7em;
+    cursor: pointer;
+    transition: color 0.2s ease, scale 0.2s ease;
+    border: none;
+    background: none;
+
+    &:hover {
+      color: #f00;
+      scale: 1.1;
+    }
+  }
+
   .colors {
     display: flex;
     flex-wrap: wrap;
