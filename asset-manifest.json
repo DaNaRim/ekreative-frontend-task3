@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/ekreative-frontend-task3/static/css/main.22076aba.css",
+    "main.js": "/ekreative-frontend-task3/static/js/main.fd7d24e2.js",
+    "static/js/787.e8851dd1.chunk.js": "/ekreative-frontend-task3/static/js/787.e8851dd1.chunk.js",
+    "static/media/background-stars.svg": "/ekreative-frontend-task3/static/media/background-stars.77c7013e7095ee33796a.svg",
+    "static/media/copy_color_audio.m4a": "/ekreative-frontend-task3/static/media/copy_color_audio.378e0f6e7cb6487c54e5.m4a",
+    "index.html": "/ekreative-frontend-task3/index.html",
+    "main.22076aba.css.map": "/ekreative-frontend-task3/static/css/main.22076aba.css.map",
+    "main.fd7d24e2.js.map": "/ekreative-frontend-task3/static/js/main.fd7d24e2.js.map",
+    "787.e8851dd1.chunk.js.map": "/ekreative-frontend-task3/static/js/787.e8851dd1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.22076aba.css",
+    "static/js/main.fd7d24e2.js"
+  ]
+}
