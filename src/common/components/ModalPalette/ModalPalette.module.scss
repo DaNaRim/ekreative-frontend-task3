@@ -33,6 +33,7 @@ $windowWidth: 80em;
       box-sizing: border-box;
       width: calc($windowWidth / 5);
       padding: 1em;
+      cursor: pointer;
       aspect-ratio: 16 / 9;
 
       h3 {
@@ -42,6 +43,27 @@ $windowWidth: 80em;
         right: 1em;
         bottom: 1em;
         display: block;
+      }
+
+      .copyButton {
+        font-family: Arial, sans-serif;
+        font-size: 1.125rem;
+        font-weight: bold;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        padding: 0.5em;
+        transition: opacity 0.2s ease;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        border: 0.1em solid;
+        border-radius: 0.2em;
+      }
+
+      &:hover {
+        .copyButton {
+          opacity: 1;
+        }
       }
 
       .colorScaleWrapper {
@@ -85,6 +107,7 @@ $windowWidth: 80em;
       &.copyStart {
         .colorScaleWrapper {
           z-index: 2;
+          cursor: default;
           transform: scale(20);
           border-radius: 100%;
         }
@@ -101,6 +124,7 @@ $windowWidth: 80em;
       &.copyMiddle {
         .copyText {
           visibility: visible;
+          cursor: default;
           opacity: 1;
         }
       }

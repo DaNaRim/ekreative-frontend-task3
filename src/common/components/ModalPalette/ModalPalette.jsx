@@ -62,7 +62,11 @@ const ColorItem = ({name, color}) => {
   };
 
   return (
-    <div className={styles.color} id={`mod-col-${name}`} style={{backgroundColor: color}} onClick={handleClick}>
+    <div className={styles.color}
+         id={`mod-col-${name}`}
+         style={{backgroundColor: color}}
+         role={"button"}
+         onClick={handleClick}>
       <div className={styles.colorScaleWrapper}
            style={{
              backgroundColor: color,
@@ -71,6 +75,8 @@ const ColorItem = ({name, color}) => {
                           opacity ${animationStage2Time}ms ease-in-out`,
            }}></div>
       <h3 style={{color: textColor}}>{name}</h3>
+      <p className={styles.copyButton} style={{color: textColor, borderColor: textColor}}>Copy</p>
+
       <div className={styles.copyText} style={{
         transition: `opacity ${animationStage2Time}ms ease-in-out`,
         backgroundColor: `rgba(${isColorLight ? "255, 255, 255, 0.2" : "0, 0, 0, 0.8"})`,
