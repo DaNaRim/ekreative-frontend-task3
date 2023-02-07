@@ -5,7 +5,6 @@ import styles from "./HomePage.module.scss";
 
 const HomePage = () => (
   <main className={styles.home}>
-    <h1>Home Page</h1>
     <div className={styles.paletteList}>
       {palettesData.map((pallet) => (
         <Palette key={pallet.id} {...pallet}/>
