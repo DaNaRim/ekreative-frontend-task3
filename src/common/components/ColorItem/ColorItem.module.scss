@@ -106,4 +106,15 @@
     }
   }
 
+  @media screen {
+    @media (max-width: $windowWidth) {
+      width: calc($windowWidth / 18);
+      aspect-ratio: 1 / 1.5;
+
+      h3 {
+        font-size: 0.6rem;
+      }
+    }
+  }
+
 }

@@ -44,4 +44,14 @@ $windowWidth: 80em;
     width: 100%;
     margin-top: 1em;
   }
+
+  @media screen {
+    @media (max-width: $windowWidth) {
+      width: 80%;
+
+      h1 {
+        font-size: 1.5rem;
+      }
+    }
+  }
 }
